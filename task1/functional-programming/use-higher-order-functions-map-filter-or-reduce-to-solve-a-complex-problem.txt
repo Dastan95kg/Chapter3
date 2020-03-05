@@ -1,0 +1,10 @@
+const squareList = (arr) => {
+  // Only change code below this line
+  let res = [];
+  let list = arr.filter(num => num > 0).map(num => String(num)).filter(str => !str.includes('.') ? res.push(str) : null).map(str => +str).map(num => num * num);
+  return list;
+  // Only change code above this line
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
